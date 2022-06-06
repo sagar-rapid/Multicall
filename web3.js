@@ -6,11 +6,6 @@ ABI = [{"inputs":[{"internalType":"string","name":"_name","type":"string"},{"int
 let Contract = "0xD6D71A054159D5b5Efe2D11F4214CB35AE25E651";
 contract = new web3.eth.Contract(ABI, Contract);
 let Owner = "0xb11f09290AaeD4aEe4e98aecBF986Bd2262D2718";
-let privateKey  = "0x4a4fc42185344eed9b3650af6effc497728878acdff5fd77ec9b9f9307fca055"
-
-web3.eth.accounts.wallet.add(privateKey);
-Account = web3.eth.accounts.privateKeyToAccount(privateKey).address;
-console.log({Account});
 
 const init = async () => {
 
