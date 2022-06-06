@@ -114,13 +114,3 @@ contract NFTContract is ERC721URIStorage, Ownable, MultiDelegateCall{
         return baseURI;
     }
 }
-
-contract Helper {
-    function mintdata(address _to, uint _tempId) public pure returns (bytes memory){
-        return abi.encodeWithSelector(NFTContract.mint.selector, _to, _tempId);
-    }
-
-    function updatedata(uint _tokenId, uint _points) public pure returns (bytes memory){
-        return abi.encodeWithSelector(NFTContract.updatePoint.selector, _tokenId, _points);
-    }
-}

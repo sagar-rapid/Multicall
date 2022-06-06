@@ -20,7 +20,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 
 task("verify_contract","verifying all contract",async(taskArgs,hre) =>{
   await hre.run("verify:verify", {
-      address: "0x70624b5F28d2E41A7b7bA30E91B76460e759D423",
+      address: "0xD6D71A054159D5b5Efe2D11F4214CB35AE25E651",
       constructorArguments: ["Hritik Roshan", "HR", "https://mobiapi.owens.market/uri/"],
       });
 })
