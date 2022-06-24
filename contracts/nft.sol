@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 
-contract MultiCall {
+contract MultiDelegateCall {
     function multiCall(address[] calldata targets, bytes[] calldata data) external returns (bytes[] memory)
     {
         require(
